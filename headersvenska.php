@@ -2,9 +2,8 @@
 declare(strict_types=1);
 
 require __DIR__.'/data.php';
-
-
  ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,11 +31,11 @@ require __DIR__.'/data.php';
             </li>
           </div>
           <!-- <li><a class="link" href="index.html">Språk</a></li> -->
-          <li><a class="link" href="#">Histora</a></li>
-          <li><a class="link" href="#">Om Oss</a></li>
-          <li><a class="link" href="#">Light Mode</a></li>
-          <li><a class="link" href="signupsvenska.php">Registrera Dig</a></li>
-          <li><a class="link" href="#">Logga In</a></li>
+          <li><a class="" href="#">Histora</a></li>
+          <li><a class="" href="#">Om Oss</a></li>
+          <li><a class="download"  href="#">Newsletter</a></li>
+          <li><a class="" href="signupsvenska.php">Registrera Dig</a></li>
+          <li><a class="" href="#">Logga In</a></li>
         </ul>
       <span class="toggle">☰</span>
     </label>

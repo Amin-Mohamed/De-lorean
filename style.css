@@ -66,6 +66,10 @@ body {
   height: 2000px;
 }
 
+main {
+  padding-top: 50px;
+}
+
 nav {
   position: fixed;
   max-width: 100%;
@@ -218,7 +222,6 @@ nav {
 .dropdown:hover .link {
   background-color: #00205A;
 }
-
 
 
 

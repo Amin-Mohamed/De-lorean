@@ -1,11 +1,25 @@
-const links = document.querySelectorAll('.link');
+const download = document.querySelector('.download');
 
-// Adds a class to the links i the navbar
-Array.from(links).forEach((link) => {
-  link.addEventListener('click', (event) => {
-    link.classList.add("click-link");
-  })
-  link.addEventListener('', () => {
-    document.link.classList.remove('click-link')
-  })
+console.log(download);
+download.addEventListener('click', (event) => {
+  console.log(download);
+  const confirm = window.confirm('Vill du ladda ner?');
+  if (confirm) {
+    window.alert('Downloading');
+  }
+  else {
+    window.alert('hejdå');
+  }
 });
+
+
+
+
+  // translate.addEventListener('click', (event) => {
+  //   const translateWord = event.target.textContent;
+  //   event.preventDefault();
+  //   const confirm = window.confirm(`Are you sure you want to translate ${translateWord}`);
+  //   if (confirm) {
+  //     window.location.href = event.target.href;
+  //   }
+  // });

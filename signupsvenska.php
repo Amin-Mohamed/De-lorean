@@ -1,8 +1,11 @@
 <?php
 declare(strict_types=1);
 
-require __DIR__.'/header.php';
+require __DIR__.'/headersvenska.php';
+require __DIR__.'/data.php';
+
  ?>
+<main>
 
  <form method="post">
     <div class=“form-group”>
@@ -11,3 +14,11 @@ require __DIR__.'/header.php';
       <button type="submit">Submit</button>
     </div>
  </form>
+</main>
+
+ <?php
+
+
+
+ require __DIR__.'/footer.php';
+  ?>

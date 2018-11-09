@@ -2,9 +2,8 @@
 declare(strict_types=1);
 
 require __DIR__.'/data.php';
-
-
  ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,11 +29,11 @@ require __DIR__.'/data.php';
               </div> <!-- /Div dropContent -->
             </li>
           </div> <!-- /Div dropdown -->
-          <li><a class="link" href="#">History</a></li>
-          <li><a class="link" href="#">About Us</a></li>
-          <li><a class="link" href="#">Light Mode</a></li>
-          <li><a class="link" href="signup.php">Sign Up</a></li>
-          <li><a class="link" href="#">Log In</a></li>
+          <li><a class="" href="#">History</a></li>
+          <li><a class="" href="#">About Us</a></li>
+          <li><a class="download" href="#">Newsletter</a></li>
+          <li><a class="" href="signup.php">Sign Up</a></li>
+          <li><a class="" href="#">Log In</a></li>
         </ul>
       <span class="toggle">☰</span>
     </label>
