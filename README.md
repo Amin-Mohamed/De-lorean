@@ -1,3 +1,2 @@
 # De-lorean
-
-![Alt Text](https://media.giphy.com/media/jWnzTZrpXOgmI/giphy.gif){:height="700px" width="400px"}
+<img src="https://media.giphy.com/media/jWnzTZrpXOgmI/giphy.gif" width="100" height="100">
