@@ -17,8 +17,5 @@ require __DIR__.'/data.php';
 </main>
 
  <?php
-
-
-
  require __DIR__.'/footer.php';
   ?>

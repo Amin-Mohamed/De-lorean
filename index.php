@@ -5,7 +5,7 @@ require __DIR__.'/header.php';
 require __DIR__.'/footer.php';
 ?>
 
-<script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
 </body>
 
 </html>
