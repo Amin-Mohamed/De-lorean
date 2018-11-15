@@ -6,6 +6,7 @@
 * {
   margin: 0;
   font-family: "aktiv-grotesk-std", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,25 +20,41 @@ body {
   padding-top: 50px;
 } */
 
-nav {
+/* nav {
   position: fixed;
   max-width: 100%;
   width: 100%;
   font-family: "aktiv-grotesk-std", sans-serif;
-}
+} */
 
 .img1 {
   height: 800px;
   width: 100%;
 }
 
-/* Navbar */
+/* New Navbar */
+/* * {
+  box-sizing: border-box;
+} */
 
-#checkbox1,
-.toggle {
-  display: none;
+
+
+.menu li {
+  display: flex;
+  /* magic */
+  align-self: center;
+  width: 100%;
+  /* opacity: 0; */
+  /* visibility: hidden; */
 }
 
+.menu li a {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  color: white;
+}
 .menu {
   padding: 0;
   margin: 0;
@@ -48,6 +65,7 @@ nav {
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  transition: height .3s linear;
 }
 
 .menu li a {
@@ -58,6 +76,149 @@ nav {
   transition: background .2s linear;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropContent {
+  top: 40px;
+  display: none;
+  position: absolute;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.link {
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+}
+
+
+
+.dropContent a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ /* opacity: 1; */
+}
+
+.dropContent:hover,
+.dropdown:hover .dropContent {
+ display: block;
+}
+
+.dropdown:hover .link {
+ /* background-color: #00205A; */
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+  opacity: 0;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  /* color: #efefef; */
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* End New Navbar */
+
+
+/* Navbar */
+
+/* #checkbox1,
+.toggle {
+  display: none;
+} */
+
+
+/*
 @media screen and (max-width: 600px) {
   .menu li a {
     font-size: 13px;
@@ -77,40 +238,19 @@ nav {
     font-size: 18px;
     color: #595959;
     /* background: #000A1D; */
-    transition: all .1s linear;
+    /* transition: all .1s linear;
     /* opacity: 0; */
-  }
+  /* }
 
   /* Changes color when hovering the small menu */
-  .toggle:hover {
+  /* .toggle:hover {
     /* background: #000A1D; */
     /* opacity: 0; */
-  }
+  /* }
+*/
 
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 0px;
-    transition: height .3s linear;
-  }
 
-  .menu li {
-    display: flex;
-    /* magic */
-    align-self: center;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .menu li a {
-    width: 100%;
-    text-align: center;
-    align-self: center;
-    align-content: center;
-  }
+  /*
 }
 
 #checkbox1:checked+label .first li {
@@ -121,13 +261,13 @@ nav {
 
 #checkbox1:checked+label .first {
   height: 200px;
-}
+} */
 
 /* Ändrar bakgrunden på navbaren */
-.first {
+/* .first {
   /* background: #000A1D; */
   /* opacity: 0; */
-}
+/* }
 
 .first li a {
   color: #fff;
@@ -135,54 +275,14 @@ nav {
 
 .first li a:hover {
   /* background: #00205A; */
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white;
 }
 
 /* .click-link {
   background-color: aliceblue;
 } */
 
-.link {
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropContent {
-  display: none;
-  position: absolute;
-  /* background-color: #000A1D; */
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropContent a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  opacity: 1;
-}
-
-.dropContent a:hover {
-  /* background-color: #00205A */
-}
-
-.dropdown:hover .dropContent {
-  display: block;
-}
-
-.dropdown:hover .link {
-  /* background-color: #00205A; */
-}
 /* Navbar end*/
 
 /* Footer */

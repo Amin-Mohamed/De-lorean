@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 require __DIR__.'/data.php';
  ?>
- 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,18 +17,51 @@ require __DIR__.'/data.php';
 
 <body>
   <header>
-    <nav> <!-- Navbar -->
+
+    <div class="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+          DeLorean
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links">
+        <ul class="menu">
+          <li><a href="#" target="_blank">Home</a></li>
+          <li><a href="#" target="_blank">History</a></li>
+          <li><a href="#" target="_blank">About</a></li>
+          <li><a href="#" target="_blank">Contact</a></li>
+          <div class="dropdown">
+            <li><a class="link" href="#" >Language</a>
+              <div class="dropContent">
+                <a href="index.php">English</a>
+                <a href="svenska.php">Swedish</a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- <nav>
+    Old Navbar
       <input type="checkbox" id="checkbox1" />
       <label for="checkbox1">
         <ul class="menu first">
-          <div class="dropdown"> <!-- Div dropdown -->
+          <div class="dropdown">
             <li><a class="link" href="#">Language</a>
-              <div class="dropContent"> <!-- Div dropContent -->
+              <div class="dropContent">
                 <a href="index.php">English</a>
                 <a href="svenska.php">Swedish</a>
-              </div> <!-- /Div dropContent -->
+              </div>
             </li>
-          </div> <!-- /Div dropdown -->
+          </div>
           <li><a class="" href="#">History</a></li>
           <li><a class="" href="#">About Us</a></li>
           <li><a class="download" href="#">Newsletter</a></li>
@@ -37,5 +70,5 @@ require __DIR__.'/data.php';
         </ul>
       <span class="toggle">☰</span>
     </label>
-  </nav> <!-- /Navbar -->
+  </nav>  -->
   </header>
