@@ -17,9 +17,58 @@ body {
   position: relative;
 }
 
-a {
-  /* color: #ffffff; */
-}
+.container {
+   position: relative;
+   display: flex;
+   text-align: center;
+   color: white;
+   right: 0;
+   left: 0;
+ }
+ .img {
+   width: 100%;
+   height: 800px;
+ }
+ /* Centered text */
+ .centered {
+   position: absolute;
+   top: 70%;
+   left: 40%;
+ }
+ .P {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ h1 {
+   font-size: 50px;
+ }
+  .centered .button1 {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    background-color: black;
+  }
+  .centered .button2 {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+  }
+ .centered .button1 a {
+   font-size: 30px;
+   transform: translate(-50%, -50%);
+   text-decoration: none;
+   color: white;
+ }
+ .centered .button2 a {
+   font-size: 30px;
+   transform: translate(-50%, -50%);
+   text-decoration: none;
+   color: white;
+ }
 
 /* main {
   padding-top: 50px;
