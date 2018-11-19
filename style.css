@@ -7,7 +7,11 @@
   margin: 0;
   font-family: "aktiv-grotesk-std", sans-serif;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #F3F3F3;
+}
+
+main {
+  margin-top: -50px;
 }
 
 body {
@@ -17,33 +21,74 @@ body {
   position: relative;
 }
 
+.fotterLinks {
+  text-decoration: none;
+}
+
+.fs {
+  font-size: 200px;
+}
+.rotate {
+  transform: rotate(90deg);
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 4;
+
+}
+
 .container {
-   position: relative;
-   display: flex;
    text-align: center;
    color: white;
    right: 0;
    left: 0;
+   display: grid;
+   grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
  }
  .img {
    width: 100%;
-   height: 800px;
+   height: 100vh;
+   max-width: 1800px;
+   grid-column-start: 1;
+   grid-column-end: 6;
+   grid-row-start: 1;
+   grid-row-end: 7;
+ }
+
+ .img2 {
+   width: 100%;
+   height: 100vh;
+   max-width: 1800px;
+
  }
  /* Centered text */
  .centered {
-   position: absolute;
+   /* position: absolute;
    top: 70%;
-   left: 40%;
+   left: 40%; */
+   grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 6;
+   grid-row-end: 7;
+   /* place-self: center; */
+   align-self: center;
+   padding-left: 120px;
  }
  .P {
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   /* position: absolute; */
+   /* top: 40%;
+   left: 50%; */
+   /* transform: translate(-50%, -50%); */
+   grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 4;
+   grid-row-end: 4;
  }
  h1 {
    font-size: 50px;
  }
+
   .centered .button1 {
     width: 300px;
     padding: 10px;
@@ -51,23 +96,27 @@ body {
     border: 1px solid white;
     background-color: black;
   }
+
   .centered .button2 {
     width: 300px;
     padding: 10px;
     border: 1px solid white;
     background-color: black;
   }
+
  .centered .button1 a {
    font-size: 30px;
-   transform: translate(-50%, -50%);
+   /* transform: translate(-50%, -50%); */
    text-decoration: none;
    color: white;
  }
+
  .centered .button2 a {
    font-size: 30px;
-   transform: translate(-50%, -50%);
+   /* transform: translate(-50%, -50%); */
    text-decoration: none;
    color: white;
+
  }
 
 /* main {
@@ -81,66 +130,6 @@ body {
 } */
 
 
- .container {
-   position: relative;
-   display: flex;
-   text-align: center;
-   color: white;
- }
-
- .img {
-   width: 100%;
-   height: 800px;
- }
-
- /* Centered text */
- .centered {
-   position: absolute;
-   top: 70%;
-   left: 40%;
- }
-
- .P {
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
- }
-
- h1 {
-   font-size: 50px;
- }
-
-
-
-  .centered .button1 {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid white;
-    background-color: black;
-  }
-
-  .centered .button2 {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid white;
-    background-color: black;
-  }
-
- .centered .button1 a {
-   font-size: 30px;
-   transform: translate(-50%, -50%);
-   text-decoration: none;
-   color: white;
- }
-
- .centered .button2 a {
-   font-size: 30px;
-   transform: translate(-50%, -50%);
-   text-decoration: none;
-   color: white;
- }
 
  /* New Navbar */
  /* * {
@@ -206,6 +195,10 @@ body {
    border: none;
  }
 
+ .linkEffect:hover {
+   border-bottom: 1px solid white;
+ }
+
  .dropContent a {
    display: block;
    padding: 12px 16px;
@@ -224,7 +217,8 @@ body {
  }
 
  .nav {
-   position: relative;
+   top: 0;
+   position: fixed;
    width: 100%;
    height: 50px;
    background-color: rgba(255,0,0,0);
@@ -260,6 +254,7 @@ body {
 
  .nav>.nav-links>a:hover {
    background-color: rgba(0, 0, 0, .3);
+
  }
 
  .nav>#nav-check {
@@ -386,205 +381,3 @@ body {
   background-color: aliceblue;
 } */
  /* Navbar end*/
- /* Footer */
- footer {
-   position: absolute;
-   bottom: 0;
- }
-
- .footer-distributed {
-   font: bold 16px sans-serif;
-   overflow: hidden;
-   box-sizing: border-box;
-   width: 100%;
-   padding: 50px 60px 40px;
-   text-align: left;
-   background: black;
-   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
- }
-
- section {
-   font-size: 22px;
-   font-weight: 700;
-   display: inline-block;
-   width: 100%;
-   height: 60vh;
-   text-align: center;
-   text-decoration: underline;
-   background: #ccc;
- }
-
- /* Footer left */
- .footer-distributed .footer-left {
-   float: left;
- }
-
- /* The company logo */
- .footer-distributed h3 {
-   font: normal 36px 'aktiv-grotesk-std', sans-serif;
-   margin: 0 0 10px;
-   color: #fff;
- }
-
- .footer-distributed h3 span {
-   color: #5383d3;
- }
-
- /* Footer links */
- .footer-distributed .footer-links {
-   margin: 0 0 10px;
-   padding: 0;
-   color: #fff;
- }
-
- .footer-distributed .footer-links a {
-   line-height: 1.8;
-   display: inline-block;
-   text-decoration: none;
-   color: inherit;
- }
-
- .footer-distributed .footer-company-name {
-   font-size: 14px;
-   font-weight: normal;
-   margin: 0;
-   color: #8f9296;
- }
-
- /* Footer social icons */
- .footer-distributed .footer-icons {
-   margin-top: 40px;
- }
-
- .footer-distributed .footer-icons a {
-   font-size: 20px;
-   line-height: 35px;
-   display: inline-block;
-   width: 35px;
-   height: 35px;
-   margin-right: 3px;
-   margin-bottom: 5px;
-   cursor: pointer;
-   text-align: center;
-   color: #fff;
-   border-radius: 2px;
-   background-color: #33383b;
- }
-
- /* Footer Right */
- .footer-distributed .footer-right {
-   float: right;
- }
-
- .footer-distributed .footer-right p {
-   display: inline-block;
-   margin: 15px 42px 0 0;
-   vertical-align: top;
-   color: #fff;
- }
-
- /* The contact form */
- .footer-distributed form {
-   display: inline-block;
- }
-
- .footer-distributed form input,
- .footer-distributed form textarea {
-   font: inherit;
-   font-size: 14px;
-   font-weight: normal;
-   display: block;
-   box-sizing: border-box;
-   width: 400px;
-   padding: 18px;
-   resize: none;
-   color: #d1d2d2;
-   border: none;
-   border-radius: 3px;
-   background-color: #1f2022;
-   box-shadow: 0 1px 0 0 rgba(255, 255, 255, .1);
- }
-
- .footer-distributed ::-webkit-input-placeholder {
-   color: #5c666b;
- }
-
- .footer-distributed ::-moz-placeholder {
-   opacity: 1;
-   color: #5c666b;
- }
-
- .footer-distributed :-ms-input-placeholder {
-   color: #5c666b;
- }
-
- .footer-distributed form input {
-   height: 55px;
-   margin-bottom: 15px;
- }
-
- .footer-distributed form textarea {
-   height: 100px;
-   margin-bottom: 20px;
- }
-
- .footer-distributed form button {
-   font-weight: bold;
-   float: right;
-   padding: 15px 50px;
-   color: #fff;
-   border: 0;
-   border-radius: 3px;
-   background-color: #33383b;
- }
-
- /* Footer responsive */
- @media (max-width: 1000px) {
-   .footer-distributed {
-     font: bold 14px sans-serif;
-   }
-
-   .footer-distributed .footer-company-name {
-     font-size: 12px;
-   }
-
-   .footer-distributed form input,
-   .footer-distributed form textarea {
-     width: 250px;
-   }
-
-   .footer-distributed form button {
-     padding: 10px 35px;
-   }
- }
-
- @media (max-width: 800px) {
-   .footer-distributed {
-     padding: 30px;
-   }
-
-   .footer-distributed .footer-left,
-   .footer-distributed .footer-right {
-     float: none;
-     max-width: 300px;
-     margin: 0 auto;
-   }
-
-   .footer-distributed .footer-left {
-     margin-bottom: 40px;
-   }
-
-   .footer-distributed form {
-     margin-top: 30px;
-   }
-
-   .footer-distributed form {
-     display: block;
-   }
-
-   .footer-distributed form button {
-     float: none;
-   }
- }
-
- /* Footer End */

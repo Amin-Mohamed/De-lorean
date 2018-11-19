@@ -34,15 +34,15 @@ require __DIR__.'/data.php';
       <input type="checkbox" id="nav-check">
       <div class="nav-links">
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="linkEffect" href="#">Home</a></li>
+          <li><a class="linkEffect" href="#">About</a></li>
+          <li><a class="linkEffect" href="#">Contact</a></li>
+          <li><a class="linkEffect" href="#">Merchandise</a></li>
           <div class="dropdown">
-            <li><a class="link" href="#" >Language</a>
+            <li><a class="link linkEffect" href="#" >Language</a>
               <div class="dropContent">
-                <a href="index.php">English</a>
-                <a href="svenska.php">Swedish</a>
+                <a class="linkEffect" href="index.php">English</a>
+                <a class="linkEffect" href="svenska.php">Swedish</a>
               </div>
             </li>
           </div>
