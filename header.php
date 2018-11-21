@@ -36,8 +36,7 @@ require __DIR__.'/data.php';
         <ul class="menu">
           <li><a class="linkEffect" href="#">Home</a></li>
           <li><a class="linkEffect" href="#">About</a></li>
-          <li><a class="linkEffect" href="#">Contact</a></li>
-          <li><a class="linkEffect" href="#">Merchandise</a></li>
+          <li><a class="linkEffect" href="#">More</a></li>
           <div class="dropdown">
             <li><a class="link linkEffect" href="#" >Language</a>
               <div class="dropContent">
