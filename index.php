@@ -43,7 +43,7 @@ require __DIR__.'/header.php';
   </div>
 
   <div class="container2">
-    <img class="img2" src="/images/002.png" alt="">
+    <img class="img2" src="/images/2d_overlay.jpg" alt="">
     <div class="rotate2">
       <h1 class="about">About</h1>
     </div>
@@ -64,9 +64,33 @@ require __DIR__.'/header.php';
     </div>
   </div>
   <div class="container4">
-    <img class="img5" src="/images/005.png" alt="">
-  </div>
+    <img class="img5" src="/images/breakdown.jpg" alt="">
+    <div class="centered2">
+      <p class="join">Join the future</p>
+      <p class="limited">And get a free limited folder</p>
+      <div class="email">
+        <div class="enter">
+          <div class="emailWhite">Your e-mail</div>
+          <div class="emailRed">Please ener your e-mail</div>
+        </div>
+        <div class="button1"><a href="#">Sign up</a></div>
+      </div>
+    </div>
+    <div class="logos2">
+      <div class="facebook">
 
+      </div>
+      <div class="in">
+
+      </div>
+      <div class="twitter">
+
+      </div>
+      <div class="instagram">
+
+      </div>
+    </div>
+  </div>
 </main>
 
   <script type="text/javascript" src="javascript.js"></script>
