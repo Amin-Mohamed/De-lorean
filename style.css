@@ -27,7 +27,6 @@ body {
 
 
 .container {
-  /* background-image: url("images/Preview_studio.jpg"); */
    text-align: center;
    color: white;
    right: 0;
@@ -35,21 +34,60 @@ body {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-   /* grid-area: 1 / 1 / 4 / 2 ; */
+   margin: 0;
  }
 
  .container2 {
-
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   margin: 0;
  }
 
  .container3 {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-   grid-template-rows: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 2fr 2fr 2fr 225px 2fr 2fr 2fr;
+   grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+   margin: 0;
+ }
+
+ .rotate3 {
+   grid-area: 1 / 1 / 4 / 2 ;
+   margin: 0;
+   padding: 0;
+   writing-mode: tb-rl;
+   width: 225px;
  }
 
  .container4 {
+   display: grid;
+   grid-template-columns: 3fr 3fr 3fr;
+   grid-template-rows: 3fr 3fr 1fr;
+   margin: 0;
+ }
 
+ .container3 p {
+   font-size: 30px;
+ }
+
+ .container3 .bold {
+   font-size: 40px;
+ }
+
+ .watch {
+   /* margin-left: 96px; */
+   grid-column-start: 4;
+   grid-column-end: 5;
+   grid-row-start: 5;
+   grid-row-end: 6;
+ }
+
+ .glasses {
+   /* margin-left: 96px; */
+   grid-column-start: 8;
+   grid-column-end: 9;
+   grid-row-start: 5;
+   grid-row-end: 6;
  }
 
  .img {
@@ -65,45 +103,113 @@ body {
  .img2 {
    width: 100%;
    height: 100vh;
-   max-width: 1800px;
-
+   grid-column-start: 1;
+   grid-column-end: 8;
+   grid-row-start: 1;
+   grid-row-end: 7;
  }
 
 .img3 {
   height: 100vh;
   width: 100%;
-  grid-area: 1 / 1 / 9 / 5;
+  grid-area: 1 / 1 / 6 / 5;
 }
 
 .img4 {
   height: 100vh;
   width: 100%;
-  grid-area: 1 / 5/ 9 / 9;
+  grid-area: 1 / 5/ 6 / 9;
 }
 
- .fs {
+.img5 {
+  height: 100vh;
+  width: 100%;
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+.fs {
+  margin: 0;
+  padding: 0;
+  font-size: 250px;
+  opacity: 0.1;
+  justify-content: flex-start;
+}
+
+.about {
+  margin: 0;
+  padding: 0;
+  font-size: 250px;
+  opacity: 0.1;
+  justify-content: flex-start;
+}
+
+.more {
+  margin: 0;
+  padding: 0;
+  font-size: 250px;
+  opacity: 0.1;
+  justify-content: flex-start;
+}
+
+.logos {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+ .facebook {
+   height: 40px;
+   width: 40px;
+   border: 1px solid #F3F3F3;
+   margin-left: 4px;
+   margin-right: 4px;
+ }
+
+ .in {
+   height: 40px;
+   width: 40px;
+   border: 1px solid #F3F3F3;
+   margin-left: 4px;
+   margin-right: 4px;
+ }
+
+ .twitter {
+   height: 40px;
+   width: 40px;
+   border: 1px solid #F3F3F3;
+   margin-left: 4px;
+   margin-right: 4px;
+ }
+
+ .instagram {
+   height: 40px;
+   width: 40px;
+   border: 1px solid #F3F3F3;
+   margin-left: 4px;
+   margin-right: 4px;
+ }
+
+ .rotate {
+   grid-area: 2 / 1 / 7 / 2 ;
    margin: 0;
    padding: 0;
-   font-size: 300px;
-   opacity: 0.1;
-   /* transform: rotate(90deg); */
-   /* grid-area: 2 / 2 / 7 / 3;
-   writing-mode: vertical-rl;
-   text-orientation: mixed; */
-
- }
- 
- .rotate {
-   grid-area: 1 / 1 / 7 / 3 ;
-
    writing-mode: tb-rl;
-   /* transform: rotate(90deg); */
-   /* grid-column-start: 1;
-   grid-column-end: 3;
-   grid-row-start: 2;
-   grid-row-end: 5; */
-
+   width: 225px;
  }
+
+ .rotate2 {
+   grid-area: 2 / 1 / 6/ 2 ;
+   margin: 0;
+   padding: 0;
+   writing-mode: tb-rl;
+   width: 225px;
+ }
+
+
 
  /* Centered text */
  .centered {
@@ -123,20 +229,19 @@ body {
  }
 
  .P {
-   /* position: absolute; */
-   /* top: 40%;
-   left: 50%; */
-   /* transform: translate(-50%, -50%); */
    grid-column-start: 4;
    grid-column-end: 4;
    grid-row-start: 4;
    grid-row-end: 4;
-   /* font-weight:lighter; */
-   /* font-family: "aktiv-grotesk-std", thin, sans-serif; */
+
  }
 
  .p h1 {
-   font-weight: lighter;
+   font-size: 60px;
+ }
+
+ .p p {
+   font-size: 20px;
  }
 
  h1 {
@@ -168,7 +273,7 @@ body {
 .emailRed {
   font-size: 14px;
   color: #C22626;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .centered .button1 {
