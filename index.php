@@ -7,10 +7,10 @@ require __DIR__.'/header.php';
 <main>
 
   <div class="container">
-    <img class="img" src="/images/studioNew.png" alt="">
-    <!-- <div class="rotate">
+    <img class="img" src="/images/studioWide.png" alt="">
+    <div class="rotate">
       <h1 class="fs">FS 1.0</h1>
-    </div> -->
+    </div>
     <div class="P">
       <h1>YOU ARE SPECIAL.</h1>
       <p> FASTSECURITY 1.0</p>
@@ -26,17 +26,45 @@ require __DIR__.'/header.php';
         <div class="button1"><a href="#">Sign up</a></div>
       </div>
     </div>
+    <div class="logos">
+      <div class="facebook">
+
+      </div>
+      <div class="in">
+
+      </div>
+      <div class="twitter">
+
+      </div>
+      <div class="instagram">
+
+      </div>
+    </div>
   </div>
 
   <div class="container2">
-    <img class="img2" src="/images/2d_overlay.jpg" alt="">
+    <img class="img2" src="/images/002.png" alt="">
+    <div class="rotate2">
+      <h1 class="about">About</h1>
+    </div>
   </div>
   <div class="container3">
     <img class="img3" src="/images/glasses.png" alt="">
+    <div class="rotate3">
+      <h1 class="more">More</h1>
+    </div>
+    <div class="watch">
+      <p class="bold">Watch</p>
+      <p>Watch</p>
+    </div>
     <img class="img4" src="/images/glasses.png" alt="">
+    <div class="glasses">
+      <p class="bold">Glasses</p>
+      <p>Watch</p>
+    </div>
   </div>
   <div class="container4">
-    <img class="img5" src="/images/2d_overlay.jpg" alt="">
+    <img class="img5" src="/images/005.png" alt="">
   </div>
 
 </main>
