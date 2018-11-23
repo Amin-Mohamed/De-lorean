@@ -6,7 +6,7 @@ require __DIR__.'/header.php';
 ?>
 <main>
 
-  <div class="container">
+  <div class="container section" id="home" >
     <img class="img" src="/images/studioWide.png" alt="">
     <div class="rotate">
       <h1 class="fs">FS 1.0</h1>
@@ -21,34 +21,34 @@ require __DIR__.'/header.php';
       <div class="email">
         <div class="enter">
           <div class="emailWhite">Your e-mail</div>
-          <div class="emailRed">Please ener your e-mail</div>
         </div>
-        <div class="button1"><a href="#">Sign up</a></div>
+        <div class="button1"><a class="signUp" href="#">Sign up</a></div>
       </div>
+      <div class="emailRed">Please ener your e-mail</div>
     </div>
     <div class="logos">
       <div class="facebook">
-
+        <img src="/Icons/face.svg" alt="">
       </div>
       <div class="in">
-
+        <img src="/Icons/linked.svg" alt="">
       </div>
       <div class="twitter">
-
+        <img src="/Icons/twitt.svg" alt="">
       </div>
       <div class="instagram">
-
+        <img src="/Icons/insta.svg" alt="">
       </div>
     </div>
   </div>
 
-  <div class="container2">
+  <div class="container2 section" id="about">
     <img class="img2" src="/images/2d_overlay.jpg" alt="">
     <div class="rotate2">
       <h1 class="about">About</h1>
     </div>
   </div>
-  <div class="container3">
+  <div class="container3 section" id="more">
     <img class="img3" src="/images/glasses.png" alt="">
     <div class="rotate3">
       <h1 class="more">More</h1>
@@ -71,29 +71,29 @@ require __DIR__.'/header.php';
       <div class="email">
         <div class="enter">
           <div class="emailWhite">Your e-mail</div>
-          <div class="emailRed">Please ener your e-mail</div>
         </div>
         <div class="button1"><a href="#">Sign up</a></div>
       </div>
+      <div class="emailRed">Please ener your e-mail</div>
     </div>
     <div class="logos2">
       <div class="facebook">
-
+        <img src="/Icons/face.svg" alt="">
       </div>
       <div class="in">
-
+        <img src="/Icons/linked.svg" alt="">
       </div>
       <div class="twitter">
-
+        <img src="/Icons/twitt.svg" alt="">
       </div>
       <div class="instagram">
-
+        <img src="/Icons/insta.svg" alt="">
       </div>
     </div>
   </div>
 </main>
 
-  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
