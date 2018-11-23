@@ -4,7 +4,7 @@ declare(strict_types=1);
 require __DIR__.'/data.php';
  ?>
  
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -30,7 +30,7 @@ require __DIR__.'/data.php';
               </div>
             </li>
           </div>
-          <!-- <li><a class="link" href="index.html">Språk</a></li> -->
+
           <li><a class="" href="#">Histora</a></li>
           <li><a class="" href="#">Om Oss</a></li>
           <li><a class="download"  href="#">Newsletter</a></li>
@@ -40,4 +40,4 @@ require __DIR__.'/data.php';
       <span class="toggle">☰</span>
     </label>
     </nav>
-  </header>
+  </header> -->
