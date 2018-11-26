@@ -3,7 +3,9 @@
     Font family: "aktiv-grotesk-std", sans-serif;
 */
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -13,7 +15,7 @@
 }
 
 main {
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
 
 body {
@@ -36,8 +38,23 @@ body {
   grid-row-start: 1;
 }
 
-.fotterLinks {
-  text-decoration: none;
+
+.footer
+{
+    display: flex;
+
+    background-color: #111;
+
+    justify-content: center;
+}
+.footer a
+{
+    display: block;
+
+    margin: 20px 20px;
+
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .container {
@@ -46,7 +63,7 @@ body {
    right: 0;
    left: 0;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+   grid-template-columns: 225px 3fr 225px;
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
    margin: 0;
 }
@@ -68,8 +85,8 @@ body {
 .container4 {
    text-align: center;
    display: grid;
-   grid-template-columns: 3fr 3fr 3fr;
-   grid-template-rows: 3fr 3fr 1fr 1fr;
+   grid-template-columns: 225px 3fr 225px;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
    margin: 0;
 }
 
@@ -87,6 +104,12 @@ body {
    grid-column-end: 5;
    grid-row-start: 5;
    grid-row-end: 6;
+   width: 151px;
+   height: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+
 }
 
 .glasses {
@@ -95,13 +118,22 @@ body {
    grid-column-end: 9;
    grid-row-start: 5;
    grid-row-end: 6;
+   width: 151px;
+   height: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .img {
    width: 100%;
    height: 100vh;
    grid-column-start: 1;
-   grid-column-end: 8;
+   grid-column-end: 4;
    grid-row-start: 1;
    grid-row-end: 7;
 }
@@ -127,7 +159,7 @@ body {
 .img5 {
   height: 100vh;
   width: 100%;
-  grid-area: 1 / 1 / 5 / 4;
+  grid-area: 1 / 1 / 7 / 4;
 }
 
 .fs {
@@ -155,25 +187,26 @@ body {
 }
 
 .logos {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
   display: flex;
   justify-content: center;
-  margin-top: 12px;
-  margin-bottom: 53px;
+  /* align-items: flex-end; */
+  margin-top: 80px;
+  /* margin-bottom: 53px; */
 }
 
 .logos2 {
   grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
   display: flex;
   justify-content: center;
-  margin-bottom: 53px;
-  margin-top: 27px;
+  /* margin-bottom: 53px; */
+  margin-top: 80px;
 }
 
 .facebook {
@@ -239,6 +272,7 @@ body {
 .rotate2 {
    grid-area: 1 / 1 / 6/ 2 ;
    margin: 0;
+   margin-top: 106px;
    padding: 0;
    writing-mode: tb-rl;
    width: 225px;
@@ -247,20 +281,32 @@ body {
 .rotate3 {
    grid-area: 1 / 1 / 4 / 2 ;
    margin: 0;
+   margin-top: 123px;
    padding: 0;
    writing-mode: tb-rl;
    width: 225px;
 }
 
+.text {
+  grid-area: 2 / 2 / 4 / 4;
+  height: 169px;
+  width: 340px;
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 27px;
+}
 
  /* Centered text */
 .centered {
    /* position: absolute;
    top: 70%;
    left: 40%; */
-   grid-column-start: 4;
-   grid-column-end: 5;
-   grid-row-start: 6;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 5;
    grid-row-end: 7;
    /* place-self: center; */
    align-self: center;
@@ -272,8 +318,8 @@ body {
    left: 40%; */
    grid-column-start: 2;
    grid-column-end: 3;
-   grid-row-start: 3;
-   grid-row-end: 4;
+   grid-row-start: 5;
+   grid-row-end: 7;
    /* place-self: center; */
    align-self: center;
 }
@@ -284,8 +330,8 @@ body {
 }
 
 .P {
-   grid-column-start: 4;
-   grid-column-end: 5;
+   grid-column-start: 2;
+   grid-column-end: 3;
    grid-row-start: 4;
    grid-row-end: 5;
 
@@ -320,13 +366,20 @@ h1 {
   background-color: #111;
   border: 1px solid #F3F3F3;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
+/* .enter2 {
+  width: 208px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+} */
+
 .emailWhite {
   font-size: 16px;
-  justify-content: flex-start;
+  margin-left: 13px;
 }
 
 .emailRed {
@@ -353,7 +406,7 @@ h1 {
   margin-bottom: 5px;
   border: 1px solid white;
   background-color: white;
-  grid-area: 3 / 2 / 4 / 3;
+  grid-area: 6 / 4 / 7 / 5;
 }
 
 .centered .button1 a {
