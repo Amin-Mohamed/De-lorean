@@ -7,7 +7,7 @@ require __DIR__.'/header.php';
 <main>
 
   <div class="container section" id="home" >
-    <img class="img" src="/images/studioWide.png" alt="">
+    <img class="img" src="/images/studio_wide.jpg" alt="">
     <div class="rotate">
       <h1 class="fs">FS 1.0</h1>
     </div>
@@ -24,7 +24,9 @@ require __DIR__.'/header.php';
         </div>
         <div class="button1"><a class="signUp" href="#">Sign up</a></div>
       </div>
-      <div class="emailRed">Please ener your e-mail</div>
+      <div class="enter2">
+        <div class="emailRed">Please ener your e-mail</div>
+      </div>
     </div>
     <div class="logos">
       <div class="facebook">
@@ -43,13 +45,19 @@ require __DIR__.'/header.php';
   </div>
 
   <div class="container2 section" id="about">
-    <img class="img2" src="/images/2d_overlay.jpg" alt="">
+    <img class="img2" src="/images/2d_wheels.png" alt="">
     <div class="rotate2">
       <h1 class="about">About</h1>
     </div>
+    <div class="text">
+      <p>Many people still think Saab makes cars, and that is correct. We are
+        on the go for the future. Saab is very much alive and well, as one of
+        the world’s most innovative companies. And now we are proud to present
+        our car for the future: <br>FastSecurity, FS.</p>
+    </div>
   </div>
   <div class="container3 section" id="more">
-    <img class="img3" src="/images/glasses.png" alt="">
+    <img class="img3" src="/images/watch_studio_shadow.png" alt="">
     <div class="rotate3">
       <h1 class="more">More</h1>
     </div>
@@ -57,14 +65,14 @@ require __DIR__.'/header.php';
       <p class="bold">Watch</p>
       <p>Watch</p>
     </div>
-    <img class="img4" src="/images/glasses.png" alt="">
+    <img class="img4" src="/images/glasses_shadow.png" alt="">
     <div class="glasses">
       <p class="bold">Glasses</p>
       <p>Watch</p>
     </div>
   </div>
   <div class="container4">
-    <img class="img5" src="/images/breakdown.jpg" alt="">
+    <img class="img5" src="/images/models.jpg" alt="">
     <div class="centered2">
       <p class="join">Join the future</p>
       <p class="limited">And get a free limited folder</p>
