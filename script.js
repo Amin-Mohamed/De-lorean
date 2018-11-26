@@ -21,7 +21,6 @@
 	};
 })();
 
-
 (function(){
   $('#fullpage').fullpage({
     sectionSelector: '.section',
