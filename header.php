@@ -27,8 +27,8 @@
        <ul class="navbar-nav">
          <li class="nav-link"><a class="active" href="#home">Home</a></li>
          <li class="nav-link"><a  href="#about">About</a></li>
-         <li class="nav-link"><a  href="#more">More</a></li>
-         <li class="nav-link"><a  href="#">Langauge</a>
+         <li class="nav-link"><a  href="#more">Merch</a></li>
+         <li class="nav-link"><a  href="">Langauge</a>
          <ul class="dropdown">
            <a class= "dropdown-link" href="#">Svenska</a>
            <a href="#">English</a>
@@ -38,9 +38,10 @@
      </nav>
      <div id="side-menu" class="side-nav">
        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-       <a class="nav-link" href="#">Home</a>
-       <a class="nav-link" href="#">History</a>
-       <a class="nav-link" href="#">More</a>
+       <a class="nav-link" href="#home">Home</a>
+       <a class="nav-link" href="#about">About</a>
+       <a class="nav-link" href="#more">Merch</a>
+       <a class="nav-link" href="#">Privacy & Legacy</a>
        <div class="side-menu-Langauge">
          <a href="#">EN</a>
          <a href="#">SV</a>
