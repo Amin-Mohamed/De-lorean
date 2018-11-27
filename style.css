@@ -24,6 +24,14 @@ body {
   position: relative;
 }
 
+.watch-mobil {
+  display: none;
+}
+
+/* #popup1, .button {
+  display: none;
+} */
+
 .logo{
   width: 50px;
   height: 64px;
@@ -290,13 +298,14 @@ body {
 .text {
   grid-area: 2 / 2 / 4 / 4;
   height: 169px;
-  width: 340px;
+  width: 360px;
 }
 
 .text p {
   font-size: 16px;
   font-weight: lighter;
   line-height: 27px;
+  letter-spacing: 0.5px;
 }
 
  /* Centered text */
@@ -337,16 +346,21 @@ body {
 
 }
 
-.p h1 {
-   font-weight: lighter;
-}
+/* .p h1 {
+   font-weight: bold;
+   font-size: 60px;
+   font-size: 3.5vw;
+} */
 
-.p p {
+.fast {
    font-size: 20px;
+   font-weight: lighter;
+   letter-spacing: 5.7px;
 }
 
 h1 {
    font-size: 3.5vw;
+   font-weight: bold;
 }
 
 .join {
@@ -359,7 +373,7 @@ h1 {
   justify-content: center;
 }
 
-.enter {
+/* .enter {
   margin-right: 16px;
   height: 40px;
   width: 208px;
@@ -368,25 +382,39 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-/* .enter2 {
-  width: 208px;
-  height: 14px;
-  display: flex;
-  align-items: center;
 } */
-
-.emailWhite {
-  font-size: 16px;
-  margin-left: 13px;
+.enter2 {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.emailRed {
+.email-white {
+  font-size: 16px;
+  margin-right: 16px;
+  background-color: #111;
+  color: #F3F3F3;
+  height: 40px;
+  width: 208px;
+  border: 1px solid #F3F3F3;
+}
+
+.email-white::-webkit-input-placeholder {
+  padding-left: 13px;
+}
+
+.email-red {
   margin-top: 6px;
   font-size: 14px;
   color: #C22626;
-  /* visibility: hidden; */
+  /* display: flex; */
+
+  visibility: hidden;
+}
+
+.signUp {
+  visibility: hidden;
 }
 
 .centered .button1 {
@@ -426,6 +454,7 @@ h1 {
 
 
 
+
 /* main {
   padding-top: 50px;
 } */
@@ -438,6 +467,222 @@ h1 {
 
 @media(max-width:600px)
 {
+  .footer {
+    display: none;
+  }
+
+  .img, .img2, .img3, .img4, .img5 {
+    display: none;
+  }
+
+  .centered, .centered2 {
+    display: none;
+  }
+
+  .logos, .logos2 {
+    display: none;
+  }
+
+  .rotate, .rotate2, .rotate3 {
+    display: none;
+  }
+
+  .glasses {
+
+    display: none;
+  }
+
+  .plus-popup{
+    border-radius: 100px;
+    border: 1px solid #92FFFF;
+    padding: 10px;
+
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .container
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-image: url('mobil-images/01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+
+    justify-content: center;
+}
+.container2
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-image: url('mobil-images/mcBack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+
+    justify-content: center;
+}
+.container3
+{
+
+    display: flex;
+    flex-direction: column;
+
+    height: 50vh;
+
+    background-image: url('mobil-images/glasses.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+
+    justify-content: center;
+}
+
+/* .watch-mobil {
+  display: visible;
+  color: #F3F3F3;
+} */
+.container4
+{
+
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-image: url('mobil-images/watch.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+
+    justify-content: center;
+}
+.container5{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('mobil-images/04.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-size: 100%;
+
+  justify-content: center;
+}
+.P
+{
+    margin-bottom: 550px;
+}
+
+.P, h1 {
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+.fast {
+  font-size: 3vw;
+  font-weight: lighter;
+}
+
+.footer-text {
+  margin-left: 9vw;
+  margin-bottom: 35vw;
+
+}
+
+.footer-text h3 {
+  font-size: 28vw;
+  font-weight: normal;
+
+}
+.footer-text p {
+  font-size: 12vw;
+  font-weight: lighter;
+}
+.overlay
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    visibility: hidden;
+
+    transition: opacity 500ms;
+
+    opacity: 0;
+    color: black;
+    background: rgba(0, 0, 0, .7);
+}
+
+.overlay:target
+{
+    visibility: visible;
+
+    opacity: 1;
+}
+
+.popup
+{
+    position: relative;
+    top: 300px;
+    left: 30px;
+
+    display: flex;
+
+    width: 75%;
+    height: 180px;
+
+    transition: all 2s ease-in-out;
+
+    border: 4px solid #111;
+    background: #000;
+}
+
+.popup .close
+{
+    font-size: 30px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 1px;
+    right: 10px;
+
+    transition: all 200ms;
+    text-decoration: none;
+
+    color: #333;
+}
+
+.popup .content
+{
+    display: block;
+    overflow: auto;
+
+    width: auto;
+    margin: auto;
+}
+
+.button {
+  position: fixed;
+  right: 10px;
+}
+
+form {
+  margin: 10px;
+}
     .open-slide-menu
     {
         position: fixed;
@@ -492,10 +737,26 @@ h1 {
     {
         display: none;
     }
+    /* h3{
+    font-size: 10vw;
+  }
+  p{
+   font-size: 5vw;
+  } */
+
+
 }
 
 @media(min-width:600px)
 {
+  .watch-mobil {
+    /* background-color: red;
+    display: visible;
+    color: #F3F3F3; */
+  }
+  #popup1, .button {
+    display: none;
+  }
     .navbar-nav
     {
         position: fixed;
