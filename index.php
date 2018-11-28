@@ -33,7 +33,7 @@ require __DIR__.'/header.php';
     </div>
 
     <a class="button" href="#popup1" >
-    <img class="plus-popup" alt="" src="mobil-images/plus.svg" width="40" height="40"></a>
+    <img class="plus-popup" alt="" src="mobil-images/plus.svg" width="50" height="50"></a>
     <div id="popup1" class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
@@ -94,10 +94,7 @@ require __DIR__.'/header.php';
     </div>
   </div>
   <div class="container4">
-    <div class="watch-mobil">
-      <p>Watch</p>
-    </div>
-    <img class="img5" src="/images/models.jpg" alt="">
+    <img class="img5" src="/images/models1.0.jpg" alt="">
     <div class="centered2">
       <p class="join">Join the future</p>
       <p class="limited">And get a free limited folder</p>
