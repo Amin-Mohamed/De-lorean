@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>button/linkedin_hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-141.000000, -217.000000)">
+            <g id="Group-6-Copy-3" transform="translate(93.000000, 217.000000)">
+                <g id="button/linkedin_hover" transform="translate(48.000000, 0.000000)">
+                    <g id="Group-2">
+                        <rect id="Rectangle-Copy-10" stroke="#F3F3F3" x="0.5" y="0.5" width="39" height="39"></rect>
+                        <path d="M13.2491892,10.6086957 C13.2491892,12.0497391 12.0791892,13.2173913 10.6351351,13.2173913 C9.19108108,13.2173913 8.02108108,12.0497391 8.02108108,10.6086957 C8.02108108,9.16869565 9.19108108,8 10.6351351,8 C12.0791892,8 13.2491892,9.16869565 13.2491892,10.6086957 Z M13.2702703,15.3043478 L8,15.3043478 L8,32 L13.2702703,32 L13.2702703,15.3043478 Z M21.6837297,15.3043478 L16.4471892,15.3043478 L16.4471892,32 L21.6847838,32 L21.6847838,23.2358261 C21.6847838,18.3627826 28.0396757,17.9641739 28.0396757,23.2358261 L28.0396757,32 L33.2972973,32 L33.2972973,21.4285217 C33.2972973,13.205913 23.893027,13.5053913 21.6837297,17.5530435 L21.6837297,15.3043478 Z" id="Shape-Copy-7" fill="#F3F3F3" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
