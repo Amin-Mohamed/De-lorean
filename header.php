@@ -14,13 +14,14 @@
  </head>
  <body>
      <nav class="navbar">
-       <img class="logo-img" src="/images/logo.png" alt="">
+       <img class="logo-img" src="/mobil-images/logoMobile.svg" alt="">
+       <img class="logo-img-desktop" src="/images/logo.png" alt="">
        <span class="open-slide">
          <a class="open-slide-menu" href="#" onclick="openSlideMenu()">
            <svg width="30" height="30">
-             <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-             <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-             <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+             <path d="M0,5 30,5" stroke="#fff" stroke-width="2" />
+             <path d="M0,14 30,14" stroke="#fff" stroke-width="2" />
+             <path d="M0,23 30,23" stroke="#fff" stroke-width="2" />
            </svg>
          </a>
        </span>
@@ -38,57 +39,51 @@
      </nav>
      <div id="side-menu" class="side-nav">
        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-       <a class="nav-link" href="#home">Home</a>
-       <a class="nav-link" href="#about">About</a>
-       <a class="nav-link" href="#more">Merch</a>
-       <a class="nav-link" href="#">Privacy & Legacy</a>
+       <a class="nav-link-m" class="active" href="#home">Home</a>
+       <a class="nav-link-m" href="#about">About</a>
+       <a class="nav-link-m" href="#more">Merch</a>
+       <a class="nav-link-m" href="#more">Privacy & Legacy</a>
+       <a class="nav-link-m" href="#more">Contact</a>
+       <div class="logo">
+          <div class="logos-1">
+            <div class="facebook">
+              <img src="/Icons/facebook_hover.svg" alt="">
+            </div>
+            <div class="instagram">
+              <img src="/Icons/instagram_hover.svg" alt="">
+            </div>
+          </div>
+          <div class="logos-2">
+            <div class="in">
+              <img src="/Icons/linkedin_hover.svg" alt="">
+            </div>
+            <div class="twitter">
+              <img src="/Icons/twitter_hover.svg" alt="">
+            </div>
+          </div>
+      </div>
+      <div class="side-menu-Langauge">
+        <a class="en" href="#">EN</a>
+        <hr width="1" size="23">
+        <a class="sv" href="#">SV</a>
+      </div>
+      <div class="saab">
+        <img src="mobil-images/Saablogo.svg" alt="">
+      </div>
+      <div class="saab-text">
+        <p>Saab AB © 2018</p>
+      </div>
+    </div>
+
+
+     <!-- <div id="side-menu" class="side-nav">
+       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+       <a class="nav-link-m" class="active" href="#home">Home</a>
+       <a class="nav-link-m" href="#about">About</a>
+       <a class="nav-link-m" href="#more">Merch</a>
+       <a class="nav-link-m" href="#">Privacy & Legacy</a>
        <div class="side-menu-Langauge">
          <a href="#">EN</a>
          <a href="#">SV</a>
        </div>
-     </div>
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>FastSecure</title>
-</head>
-
-<body>
-  <header>
-
-    <div class="nav">
-      <div class="nav-header">
-        <div class="nav-title">
-          DeLorean
-        </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      <input type="checkbox" id="nav-check">
-      <div class="nav-links">
-        <ul class="menu">
-          <li><a class="linkEffect" href="#">Home</a></li>
-          <li><a class="linkEffect" href="#">About</a></li>
-          <li><a class="linkEffect" href="#">More</a></li>
-          <div class="dropdown">
-            <li><a class="link linkEffect" href="#" >Language</a>
-              <div class="dropContent">
-                <a class="linkEffect" href="index.php">English</a>
-                <a class="linkEffect" href="svenska.php">Swedish</a>
-              </div>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </header> -->
+     </div> -->
