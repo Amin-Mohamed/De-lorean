@@ -39,3 +39,15 @@ function openSlideMenu(){
 function closeSlideMenu(){
   document.getElementById('side-menu').style.width = '0';
 }
+
+const emailRight = document.querySelector('input[type=email]');
+console.log(emailRight);
+const signUpError = document.querySelector('.email-red');
+const signUp = document.querySelector('.sign-up');
+signUp.addEventListener('click', (event) => {
+  // event.preventDefault(); //hindrar det som skulle skett by default, typ följa länken
+  if (!emailRight) {
+    signUpError.style.visibility = "visible";
+  }
+
+});
