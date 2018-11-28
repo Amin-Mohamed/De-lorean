@@ -32,7 +32,7 @@
          <li class="nav-link"><a  href="">Langauge</a>
          <ul class="dropdown">
            <a class= "dropdown-link" href="#">Svenska</a>
-           <a href="#">English</a>
+           <a class= "dropdown-link" href="#">English</a>
          </ul>
          </li>
        </ul>
