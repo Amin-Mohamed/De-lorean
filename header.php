@@ -15,9 +15,9 @@
  <body>
      <nav class="navbar">
        <img class="logo-img" src="/mobil-images/logoMobile.svg" alt="">
-       <img class="logo-img-desktop" src="/images/logo.png" alt="">
+       <img class="logo-img-desktop" src="/Icons/LOGO.png" alt="">
        <span class="open-slide">
-         <a class="open-slide-menu" href="#" onclick="openSlideMenu()">
+         <a class="open-slide-menu" onclick="openSlideMenu()">
            <svg width="30" height="30">
              <path d="M0,5 30,5" stroke="#fff" stroke-width="2" />
              <path d="M0,14 30,14" stroke="#fff" stroke-width="2" />
