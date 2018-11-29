@@ -32,8 +32,8 @@ body {
 .logo-img-desktop {
   position: fixed;
   top: 15px;
-  width: 50px;
-  height: 64px;
+  width: 90px;
+  height: 115px;
   margin: 24px;
   grid-column-start: 1;
   grid-row-start: 1;
@@ -563,12 +563,12 @@ h1 {
     }
 
     .footer-text h3 {
-      font-size: 23vw;
+      font-size: 24vw;
       font-weight: bold;
     }
 
     .footer-text p {
-      font-size: 10.5vw;
+      font-size: 9vw;
       font-weight: lighter;
     }
 
@@ -835,7 +835,7 @@ h1 {
     .dropdown {
       position: fixed;
       top: 84px;
-      right: -10px;
+      right: -12px;
       text-align: center;
       display: none;
       visibility: hidden;

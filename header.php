@@ -1,6 +1,11 @@
 <?php
-  declare(strict_types=1);
-  require __DIR__.'/data.php';
+declare(strict_types=1);
+require __DIR__.'/data.php';
+$language = $languages[$_GET['lang']];
+if(!isset($language)) {
+   header('Location: header.php?lang=en');
+}
+
 ?>
 
  <!DOCTYPE html>
@@ -26,24 +31,24 @@
          </a>
        </span>
        <ul class="navbar-nav">
-         <li class="nav-link"><a class="active" href="#home">Home</a></li>
-         <li class="nav-link"><a  href="#about">About</a></li>
-         <li class="nav-link"><a  href="#more">Merch</a></li>
-         <li class="nav-link"><a  href="">Langauge</a>
+         <li class="nav-link"><a class="active" href="#home"><?= $language['home'];?></a></li>
+         <li class="nav-link"><a  href="#about"><?= $language['about'];?></a></li>
+         <li class="nav-link"><a  href="#more"><?= $language['merch'];?></a></li>
+         <li class="nav-link"><a  href=""><?= $language['langauge'];?></a>
          <ul class="dropdown">
-           <a class= "dropdown-link" href="#">Svenska</a>
-           <a class= "dropdown-link" href="#">English</a>
+           <a class= "dropdown-link" href="?lang=sv">Svenska</a>
+           <a class= "dropdown-link" href="?lang=en">English</a>
          </ul>
          </li>
        </ul>
      </nav>
      <div id="side-menu" class="side-nav">
        <a  class="btn-close" onclick="closeSlideMenu()">&times;</a>
-       <a class="nav-link-m" class="active" href="#home">Home</a>
-       <a class="nav-link-m" href="#about">About</a>
-       <a class="nav-link-m" href="#more">Merch</a>
+       <a class="nav-link-m" class="active" href="#home"><?= $language['home'];?></a>
+       <a class="nav-link-m" href="#about"><?= $language['about'];?></a>
+       <a class="nav-link-m" href="#more"><?= $language['merch'];?></a>
        <a class="nav-link-m" href="#more">Privacy & Legacy</a>
-       <a class="nav-link-m" href="#more">Contact</a>
+       <a class="nav-link-m" href="#more"><?= $language['contact'];?></a>
        <div class="logo">
           <div class="logos-1">
             <div class="facebook">
@@ -63,9 +68,9 @@
           </div>
       </div>
       <div class="side-menu-Langauge">
-        <a class="en" href="#">EN</a>
+        <a class="en" href="?lang=en">EN</a>
         <hr width="1" size="23">
-        <a class="sv" href="#">SV</a>
+        <a class="sv" href="?lang=sv">SV</a>
       </div>
       <div class="saab">
         <img src="mobil-images/Saablogo.svg" alt="">
