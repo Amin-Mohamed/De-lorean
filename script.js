@@ -43,7 +43,7 @@ for(let i = 0; i < signUp.length; i++){
 
     if(ValidateEmail(emailRight[i].value)){
       signUpError[i].style.display = 'none'
-      window.open('pdf/FastSecurity0.0.pdf', '_blank')
+      window.open('pdf/FastSecurity1.0.pdf', '_blank')
     }else{
       signUpError[i].style.display = 'initial'
     }
