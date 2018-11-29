@@ -92,7 +92,7 @@ for(let i = 0; i < signUp.length; i++){
 
 const emailRightMobile = document.querySelectorAll('.email-white-mobile');
 
-//const signUpErrorMobile = document.querySelectorAll('.email-red-mobile');
+const signUpErrorMobile = document.querySelectorAll('.email-red-mobile');
 const signUpMobile = document.querySelectorAll('.signup-button');
 
 for(let i = 0; i < signUpMobile.length; i++){
@@ -102,10 +102,10 @@ for(let i = 0; i < signUpMobile.length; i++){
     console.log(emailRightMobile[i].value)
 
     if(ValidateEmail(emailRightMobile[i].value)){
-      //signUpErrorMobile[i].style.display = 'none'
+      signUpErrorMobile[i].style.display = 'none'
       window.open('pdf/FastSecurity0.0.pdf', '_blank')
     }else{
-      //signUpErrorMobile[i].style.display = 'initial'
+      signUpErrorMobile[i].style.display = 'initial'
     }
 
 
