@@ -74,16 +74,3 @@
         <p>Saab AB © 2018</p>
       </div>
     </div>
-
-
-     <!-- <div id="side-menu" class="side-nav">
-       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-       <a class="nav-link-m" class="active" href="#home">Home</a>
-       <a class="nav-link-m" href="#about">About</a>
-       <a class="nav-link-m" href="#more">Merch</a>
-       <a class="nav-link-m" href="#">Privacy & Legacy</a>
-       <div class="side-menu-Langauge">
-         <a href="#">EN</a>
-         <a href="#">SV</a>
-       </div>
-     </div> -->
