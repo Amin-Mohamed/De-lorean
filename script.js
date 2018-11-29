@@ -1,42 +1,6 @@
-//
-// // Download katalog
-// const download = document.querySelector('.download');
-//
-// console.log(download);
-// download.addEventListener('click', (event) => {
-//   console.log(download);
-//   const confirm = window.confirm('Vill du ladda ner?');
-//   if (confirm) {
-//     window.alert('Downloading');
-//   }
-//   else {
-//     window.alert('hejdå');
-//   }
-// });
-
-
-// (function() {
-//     let section = document.querySelectorAll(".section");
-//     let sections = {};
-//     let i = 0;
-//     Array.prototype.forEach.call(section, function(e) {
-//         sections[e.id] = e.offsetTop;
-//     });
-//     const active = document.querySelector('.active')
-//     window.onscroll = function() {
-//         let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-//         for (i in sections) {
-//             if (sections[i] <= scrollPosition) {
-//                 active.setAttribute('class', ' ');
-//                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
-//             }
-//         }
-//     };
-// })();
-
 
 (function() {
-  if (screen.width > 600) {
+  if (screen.width > 700) {
 
     let section = document.querySelectorAll(".section");
     let sections = {};
@@ -80,7 +44,7 @@ for(let i = 0; i < signUp.length; i++){
 
     if(ValidateEmail(emailRight[i].value)){
       signUpError[i].style.display = 'none'
-      window.open('pdf/FastSecurity0.0.pdf', '_blank')
+      window.open('pdf/FastSecurity1.0.pdf', '_blank')
     }else{
       signUpError[i].style.display = 'initial'
     }
@@ -103,7 +67,7 @@ for(let i = 0; i < signUpMobile.length; i++){
 
     if(ValidateEmail(emailRightMobile[i].value)){
       signUpErrorMobile[i].style.display = 'none'
-      window.open('pdf/FastSecurity0.0.pdf', '_blank')
+      window.open('pdf/FastSecurity1.0.pdf', '_blank')
     }else{
       signUpErrorMobile[i].style.display = 'initial'
     }
