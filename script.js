@@ -66,6 +66,29 @@ for(let i = 0; i < signUp.length; i++){
   })
 }
 
+const emailRightMobile = document.querySelectorAll('.email-white-mobile');
+
+//const signUpErrorMobile = document.querySelectorAll('.email-red-mobile');
+const signUpMobile = document.querySelectorAll('.signup-button');
+
+for(let i = 0; i < signUpMobile.length; i++){
+  signUpMobile[i].addEventListener('click', () => {
+    event.preventDefault()
+    console.log(emailRightMobile[i])
+    console.log(emailRightMobile[i].value)
+
+    if(ValidateEmail(emailRightMobile[i].value)){
+      //signUpErrorMobile[i].style.display = 'none'
+      window.open('pdf/FastSecurity0.0.pdf', '_blank')
+    }else{
+      //signUpErrorMobile[i].style.display = 'initial'
+    }
+
+
+
+  })
+}
+
 function ValidateEmail(mail)
 {
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
