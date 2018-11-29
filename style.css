@@ -371,7 +371,7 @@ h1 {
 
 .email-red {
   font-size: 14px;
-  visibility: hidden;
+  display: none;
   margin-top: 6px;
   color: #c22626;
 }
