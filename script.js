@@ -15,7 +15,29 @@
 // });
 
 
+// (function() {
+//     let section = document.querySelectorAll(".section");
+//     let sections = {};
+//     let i = 0;
+//     Array.prototype.forEach.call(section, function(e) {
+//         sections[e.id] = e.offsetTop;
+//     });
+//     const active = document.querySelector('.active')
+//     window.onscroll = function() {
+//         let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+//         for (i in sections) {
+//             if (sections[i] <= scrollPosition) {
+//                 active.setAttribute('class', ' ');
+//                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+//             }
+//         }
+//     };
+// })();
+
+
 (function() {
+  if (screen.width > 600) {
+
     let section = document.querySelectorAll(".section");
     let sections = {};
     let i = 0;
@@ -31,7 +53,9 @@
             }
         }
     };
+  }
 })();
+
 
 function openSlideMenu(){
   document.getElementById('side-menu').style.width = '250px';
