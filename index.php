@@ -25,7 +25,7 @@ require __DIR__.'/header.php';
 
           <!-- <div class="emailWhite">Your e-mail</div> -->
         </div>
-        <div class="button1"><a class="sign-up" href="#">Sign up</a></div>
+        <div class="button1"><a class="sign-up" href="">Sign up</a></div>
       </div>
       <div class="enter2">
         <div class="email-red">Please ener your e-mail</div>
@@ -41,7 +41,7 @@ require __DIR__.'/header.php';
           <h1 class="join">Join The Future</h1>
           <p class="limited">And get a free limited folder</p>
           <form action="index.php" method="post">
-              <input class="email-white" type="email" name="email" id="email" placeholder="e-mail@email.com">
+              <input class="email-white-mobile" type="email" name="email" id="email" placeholder="e-mail@email.com">
               <div class="signup-button-div">
                   <button class="signup-button">Sign up</button>
               </div>
@@ -104,7 +104,7 @@ require __DIR__.'/header.php';
             <input class="email-white" type="email" name="email" id="email" placeholder="e-mail@email.com">
           <!-- <div class="emailWhite">Your e-mail</div> -->
         </div>
-        <div class="button1"><a href="#">Sign up</a></div>
+        <div class="button1"><a class="sign-up" href="">Sign up</a></div>
       </div>
       <div class="email-red">Please ener your e-mail</div>
     </div>
