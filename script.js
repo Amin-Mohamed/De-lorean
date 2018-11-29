@@ -40,14 +40,37 @@ function closeSlideMenu(){
   document.getElementById('side-menu').style.width = '0';
 }
 
-const emailRight = document.querySelector('input[type=email]');
-console.log(emailRight);
-const signUpError = document.querySelector('.email-red');
-const signUp = document.querySelector('.sign-up');
-signUp.addEventListener('click', (event) => {
-  // event.preventDefault(); //hindrar det som skulle skett by default, typ följa länken
-  if (!emailRight) {
-    signUpError.style.visibility = "visible";
-  }
 
-});
+
+
+const emailRight = document.querySelectorAll('.email-white');
+
+const signUpError = document.querySelectorAll('.email-red');
+const signUp = document.querySelectorAll('.sign-up');
+
+for(let i = 0; i < signUp.length; i++){
+  signUp[i].addEventListener('click', () => {
+    event.preventDefault()
+    console.log(emailRight[i])
+    console.log(emailRight[i].value)
+
+    if(ValidateEmail(emailRight[i].value)){
+      signUpError[i].style.display = 'none'
+      window.open('pdf/FastSecurity0.0.pdf', '_blank')
+    }else{
+      signUpError[i].style.display = 'initial'
+    }
+
+
+
+  })
+}
+
+function ValidateEmail(mail)
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    return (false)
+}
