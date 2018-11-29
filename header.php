@@ -38,7 +38,7 @@
        </ul>
      </nav>
      <div id="side-menu" class="side-nav">
-       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+       <a  class="btn-close" onclick="closeSlideMenu()">&times;</a>
        <a class="nav-link-m" class="active" href="#home">Home</a>
        <a class="nav-link-m" href="#about">About</a>
        <a class="nav-link-m" href="#more">Merch</a>
@@ -47,18 +47,18 @@
        <div class="logo">
           <div class="logos-1">
             <div class="facebook">
-              <img src="/Icons/facebook_hover.svg" alt="">
+              <img src="/Icons/face.svg" alt="">
             </div>
             <div class="instagram">
-              <img src="/Icons/instagram_hover.svg" alt="">
+              <img src="/Icons/insta.svg" alt="">
             </div>
           </div>
           <div class="logos-2">
             <div class="in">
-              <img src="/Icons/linkedin_hover.svg" alt="">
+              <img src="/Icons/linked.svg" alt="">
             </div>
             <div class="twitter">
-              <img src="/Icons/twitter_hover.svg" alt="">
+              <img src="/Icons/twitt.svg" alt="">
             </div>
           </div>
       </div>
