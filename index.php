@@ -28,7 +28,7 @@ require __DIR__.'/header.php';
         <div class="button1"><a class="sign-up" href="">Sign up</a></div>
       </div>
       <div class="enter2">
-        <div class="email-red">Please ener your e-mail</div>
+        <div class="email-red">Please enter your e-mail</div>
       </div>
     </div>
 
@@ -36,12 +36,15 @@ require __DIR__.'/header.php';
     <img class="plus-popup" alt="" src="mobil-images/plus.svg" width="50" height="50"></a>
     <div id="popup1" class="overlay">
       <div class="popup">
-        <a class="close" href="#">&times;</a>
+        <a class="close" href="#"> &times;</a>
         <div class="content">
           <h1 class="join">Join The Future</h1>
           <p class="limited">And get a free limited folder</p>
           <form action="index.php" method="post">
               <input class="email-white-mobile" type="email" name="email" id="email" placeholder="e-mail@email.com">
+              <div class="enter3">
+                  <div class="email-red-mobile">Please enter your e-mail</div>
+              </div>
               <div class="signup-button-div">
                   <button class="signup-button">Sign up</button>
               </div>
@@ -123,7 +126,7 @@ require __DIR__.'/header.php';
       </div>
     </div>
   </div>
-  <div class="container5 section" id="Langauge">
+  <div class="container5 section">
   <div class="footer-text">
     <h3>Join The Future</h3>
     <p>You are special</p>
