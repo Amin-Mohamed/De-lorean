@@ -66,7 +66,7 @@ for(let i = 0; i < signUpMobile.length; i++){
 
     if(ValidateEmail(emailRightMobile[i].value)){
       signUpErrorMobile[i].style.display = 'none'
-      window.open('pdf/FastSecurity0.0.pdf', '_blank')
+      window.open('pdf/FastSecurity1.0.pdf', '_blank')
     }else{
       signUpErrorMobile[i].style.display = 'initial'
     }
