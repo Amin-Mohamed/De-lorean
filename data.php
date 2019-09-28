@@ -1,23 +1,6 @@
 <?php
+
 declare(strict_types=1);
-
-
-// if (isset($_POST['email'])) {
-//   $email = trim($_POST['email']);
-//   //echo var_dump(isset($_POST['email']));
-//
-//   if ($email === '') {
-//     echo "The email field is empty!";
-//   }
-//   elseif (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//     echo "The email $email is valid!";
-//   }
-//   else {
-//     echo "The email $email is not valid!";
-//   }
-// }
-//
-
 
 $languages =
 [
@@ -38,7 +21,7 @@ $languages =
                 'getNewsletter' => 'Ladda ner Nyhetsbrev',
                 'langauge' => 'Språk',
                 'emailRed' => 'Skriv in din mail',
-                'content' => file_get_contents(__DIR__.'/text-sv.txt')
+                'content' => file_get_contents(__DIR__.'/assets/texts/text-sv.txt')
             ],
     'en' =>
             [
@@ -57,7 +40,7 @@ $languages =
                 'getNewsletter' => 'Get Newsletter',
                 'langauge' => 'Langauge',
                 'emailRed' => 'Please enter your e-mail',
-                'content' => file_get_contents(__DIR__.'/text-eng.txt')
+                'content' => file_get_contents(__DIR__.'/assets/texts/text-eng.txt')
             ],
 ];
 ?>
